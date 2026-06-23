@@ -1,16 +1,37 @@
-# React + Vite
+# PetAdopt — Pet Adoption Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
+A full-stack MERN application where users can browse, list, and adopt pets. Pet owners can manage listings and handle adoption requests securely.
 
-Currently, two official plugins are available:
+## Live URL
+https://pet-adoption-platform.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Browse all available pets with search by name and filter by species
+- Authenticated users can submit adoption requests for pets
+- Pet owners can add, edit, and delete their pet listings
+- Pet owners can approve or reject adoption requests
+- JWT-based secure authentication stored in HTTPOnly cookies
+- Google and Email/Password login support
+- Fully responsive design for mobile, tablet, and desktop
+- Toast notifications for all user actions
+- Dashboard with statistics for listings and requests
 
-## React Compiler
+## NPM Packages Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Client
+- react
+- react-router-dom
+- axios
+- firebase
+- react-hot-toast
+- sweetalert2
+- tailwindcss
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Server
+- express
+- mongodb
+- jsonwebtoken
+- cookie-parser
+- cors
+- dotenv
