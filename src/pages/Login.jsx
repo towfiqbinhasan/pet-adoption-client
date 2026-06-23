@@ -43,10 +43,10 @@ const Login = () => {
       const result = await googleLogin();
 
       await axios.post(
-        "http://localhost:5000/jwt",
-        { email: result.user.email },
-        { withCredentials: true }
-      );
+  `${import.meta.env.VITE_API_URL}/jwt`,
+  { email: result.user.email },
+  { withCredentials: true }
+);
 
       toast.success("Login successful!");
       navigate(from, { replace: true });
