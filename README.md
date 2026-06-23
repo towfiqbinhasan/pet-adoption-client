@@ -4,7 +4,7 @@
 A full-stack MERN application where users can browse, list, and adopt pets. Pet owners can manage listings and handle adoption requests securely.
 
 ## Live URL
-https://pet-adoption-platform.vercel.app
+https://pet-adoption-client-one.vercel.app/
 
 ## Features
 - Browse all available pets with search by name and filter by species
