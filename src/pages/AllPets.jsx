@@ -10,7 +10,7 @@ const AllPets = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5000/pets?search=${search}&species=${species}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/pets?search=${search}&species=${species}`)
       .then(res => {
         setPets(res.data);
         setLoading(false);
